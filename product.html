@@ -152,22 +152,13 @@
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
                      <div class="option_container">
-                        <div class="options">
-                           <a href="checkout.html" class="option1">
-                           Men's Shirt
-                           </a>
-                           <a href="checkout.html" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p1.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
+                       <div class="options">
+                        <a href="#" class="option1" onclick="addToCart()">
+                         Add To Cart
+            </a>
+            <a href="checkout.html" class="option2">
+                Buy Now
+            </a>
                         <h6>
                            $75
                         </h6>
@@ -176,16 +167,27 @@
                </div>
                <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="checkout.html" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="checkout.html" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
+    <div class="option_container">
+        <div class="options">
+            <a href="#" class="option1" onclick="addToCart()">
+                Add To Cart
+            </a>
+            <a href="checkout.html" class="option2">
+                Buy Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart() {
+        // Perform actions to add product to cart (e.g., update cart in backend)
+
+        // Display a message indicating that the product has been added to the cart
+        alert("Product has been added to cart!");
+    }
+</script>
+
                      <div class="img-box">
                         <img src="images/p2.png" alt="">
                      </div>
