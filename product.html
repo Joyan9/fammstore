@@ -316,6 +316,22 @@
             // Perform actions to add product to cart (e.g., update cart in backend)
             // Display a message indicating that the product has been added to the cart
             alert("Product has been added to cart!");
+            dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+                dataLayer.push({
+                    event: "add_to_cart",
+                    ecommerce: {
+                        currency: "USD",
+                        value: 75,
+                        items: [
+                            {
+                                item_id: "1234",
+                                item_name: "Some Product",
+                                price: 75,
+                                quantity: 1
+                            }
+                        ]
+                    }
+                });
         }
     </script>
 </body>
